@@ -1,0 +1,325 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+/* Header*/
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+ion-icon {
+  font-size: 30px; /* Puedes ajustar el número: 16px, 32px, etc. */
+}
+/* Contenedor para el botón hamburguesa y menú */
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 200px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 4px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+    display: flex;
+    position: relative;
+    z-index: 200;
+    }
+
+ul.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #013f7d;
+    position: absolute;
+    top: 60px; /* Ajusta esto según el alto de tu navbar */
+    left: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 2px;
+    z-index: 100;
+}
+
+ul.menu.active {
+    display: flex;
+}
+}
+ul.menu li a:hover{
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* Main*/
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #003366;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.titulo{
+    text-align: center;
+}
+
+/* Contenedor de las ramas */
+.container{
+    background-color: #fad7e6;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    font-weight: 800;
+    border-radius: 08px;
+    
+}
+div{
+    cursor: pointer;
+}
+
+.gramatica{
+    background-color: #f7c49a;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    
+}
+.vocabulario{
+    background-color: #f7c49a;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.ejercicios{
+    background-color: #f7c49a;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.contacto{
+    background-color: #f7c49a;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+/* Hover para los dive del container en el main*/
+
+div .gramatica:hover{
+    background-color: rgb(163, 164, 160)
+}
+div .vocabulario:hover{
+    background-color: rgb(163, 164, 160)
+}
+div .ejercicios:hover{
+    background-color: rgb(163, 164, 160)
+}
+div .contacto:hover{
+    background-color: rgb(163, 164, 160)
+}
+
+.interactuar{
+    background-color: #fad7e6;
+    width: 60%;
+    height: 100%;
+    border-radius: 08px;
+}
+
+.interactuar{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.vocabulario1{
+    background-color: #fad7e6;
+    width: 60%;
+    height: 100%;
+    border-radius: 08px;
+    
+}
+
+.vocabulario1{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.vocabulario1 h2{
+    text-align: center;
+}
+
+.ejercicios1{
+    background-color: #fad7e6;
+    width: 60%;
+    height: 100%;
+    border-radius: 08px;
+    
+}
+
+.ejercicios1{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.ejercicios1 h2{
+    text-align: center;
+}
+
+
+.contacto1{
+    background-color: #fad7e6;
+    width: 60%;
+    height: 100%;
+    border-radius: 08px;
+    
+}
+
+.contacto1{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.contacto1 h2{
+    text-align: center;
+}
+
+
+
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container,
+    .interactuar,
+    .vocabulario1,
+    .ejercicios1,
+    .contacto1{
+        width: 90%;
+    }
+}
+
+
+
+/* Footer*/
+
+.footer {
+background-color: #333;
+color: #f1f1f1;
+text-align: center;
+padding: 5px;
+margin-top: 40px;
+
+}
+
+.footer a {
+color: #f1f1f1;
+margin: 0 10px;
+text-decoration: none;
+font-weight: bold;
+list-style: none;
+
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+ul  .face:hover{
+    background-color: #085caf;
+    border-radius: 08px;
+}
+ul .tiktok:hover{
+    background-color: black;
+    border-radius: 10px;
+}
+ul .insta:hover{
+    background: linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+
+    border-radius: 10px;
+}
+ul .whatsap:hover{
+    background-color: rgb(47, 150, 79);
+    border-radius: 10px;
+}
+
+
+.footer a:hover {
+text-decoration: underline;
+
+}
+
+.footer-content {
+max-width: 800px;
+margin: auto;
+}

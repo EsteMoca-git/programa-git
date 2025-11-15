@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <header>
+        
+        <nav class="navContent">
+            
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+
+            <!-- Menú -->
+        <ul class="menu" id="main-menu">
+            <li><a href="/main/main.html" title="Inicio"><ion-icon name="home-outline"></ion-icon>
+            <li><a href="#vocabulario">Nivel Básico</a></li>
+            <li><a href="#gramatica">Nivel Intermedio</a></li>
+            <li><a href="#ejercicios">Nivel Avanzado</a></li>
+            <li><a href="#contacto">Curso desde cero</a></li>
+        </ul>
+
+        <img class="logo" src="logo blanco.png" alt="logo">
+    </nav>
+    </header>
+
+    <form action="log_in" id="formulario">
+        <div class="iniciarSesion">
+            <div class="btn"><button type="button" class="registrarse" onclick="location.href='../form/form.html'">Registrarse</button></div>
+            <div class="inputs">
+            <h2 class="titulo2">Iniciar Sesión</h2> 
+
+            <label for="email">Ingresar Correo</label>
+            <input type="email" id="email" required placeholder="juan_perez@outlook.com">
+
+            <label for="Contraseña" >Ingresar Contraseña</label>
+            <input type="password" id="contraseña" placeholder="password" required>
+            
+            <div class="enviar"><input class="submit" type="button" value="Log in" onclick="entrar()"></div>
+            
+            </div>
+
+        </div>
+
+    </form>
+
+        <footer class="footer">
+        <div class="footer-content">
+            <p> Aprende inglés © 2025 - Made by  Esteban Moya Castro</p>
+                <ul class="footer-links">
+                    <li class="face" title="logo-facebook"><a href="https://www.facebook.com" ><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="tiktok" title="Tik-Tok"><a href="https://www.tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                    <li class="insta" title="Instagram"><a href="#Instagram"><ion-icon name="logo-instagram"></ion-icon>
+</a></li>           <li class="whatsap" title="whatsapp"><a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon>
+</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
